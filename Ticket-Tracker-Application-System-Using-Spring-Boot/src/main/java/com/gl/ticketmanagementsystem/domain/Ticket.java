@@ -9,7 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 import org.springframework.lang.NonNull;
 
 @Entity // This tells Hibernate to create a table of this class
@@ -20,19 +19,19 @@ public class Ticket {
 	// By @GeneratedValue, JPA makes a unique key automatically and applies the key
 	// to the field having @Id
 	private long id;
-	
+
 	@Column
 	@NonNull
 	private String title;
-	
+
 	@Column
 	@NonNull
 	private String description;
-	
+
 	@Column
 	@NonNull
 	private String content;
-	
+
 	@Column
 	@NonNull
 	private Date date;
@@ -80,5 +79,4 @@ public class Ticket {
 		this.date = date;
 	}
 
-	
 }
